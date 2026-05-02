@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Linear Equations & Linear Functions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to homepage">
+        <span class="brand-mark" aria-hidden="true">∕</span>
+        Linear Learning
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#examples">Interactive Examples</a>
+        <a href="#practice">Practice</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO / HOMEPAGE -->
+  <main id="home" class="page">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Linear Equations & Linear Functions</h1>
+          <p class="lead">
+            Learn the basics with clear explanations, interactive practice, and step-by-step examples.
+            Built for high school students.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#lessons">Start Learning</a>
+            <a class="btn btn-ghost" href="#practice">Practice Problems</a>
+          </div>
+
+          <div class="hero-badges" role="list" aria-label="What you will learn">
+            <div class="badge" role="listitem">Slope & Intercepts</div>
+            <div class="badge" role="listitem">Solve for x</div>
+            <div class="badge" role="listitem">Write equations</div>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Quick tips">
+          <h2 class="card-title">Quick Tips</h2>
+          <ul class="tips">
+            <li><strong>Linear:</strong> changes at a constant rate.</li>
+            <li><strong>Slope (m):</strong> “rise over run”.</li>
+            <li><strong>y-intercept (b):</strong> where the line crosses the y-axis.</li>
+            <li><strong>Function:</strong> input → output (x → y).</li>
+          </ul>
+          <div class="tip-note">
+            Use the interactive examples below to get instant feedback.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LESSONS -->
+    <section id="lessons" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Lessons</h2>
+          <p class="sub">
+            Understand what linear equations are and how linear functions describe relationships.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel">
+            <h3>1) What is a linear equation?</h3>
+            <p>
+              A <strong>linear equation</strong> is an equation that can be written in the form:
+              <strong>Ax + B = C</strong> (or with y, like <strong>Ax + By = C</strong>).
+            </p>
+            <p>
+              Example: <strong>2x + 3 = 11</strong>. To solve it, you do the same thing to both sides
+              until x is alone.
+            </p>
+
+            <div class="callout">
+              <strong>Goal:</strong> Get the variable by itself.
+            </div>
+          </article>
+
+          <article class="panel">
+            <h3>2) Solving a linear equation (steps)</h3>
+            <ol class="steps">
+              <li>Simplify both sides (combine like terms).</li>
+              <li>Undo addition/subtraction first.</li>
+              <li>Undo multiplication/division next.</li>
+              <li>Check your solution by plugging it back in.</li>
+            </ol>
+            <div class="callout callout-soft">
+              Pro tip: Keep equations balanced—whatever you do to one side, do to the other.
+            </div>
+          </article>
+        </div>
+
+        <div class="grid-2">
+          <article class="panel">
+            <h3>3) What is slope (m)?</h3>
+            <p>
+              The <strong>slope</strong> tells how much the line rises or falls when you move right.
+              Using two points, slope is:
+            </p>
+            <div class="math">
+              <span>(rise/run) = (y₂ − y₁) / (x₂ − x₁)</span>
+            </div>
+            <p>
+              If slope is positive, the line goes up. If negative, it goes down.
+            </p>
+          </article>
+
+          <article class="panel">
+            <h3>4) Linear functions (y = mx + b)</h3>
+            <p>
+              A <strong>linear function</strong> is usually written as:
+              <strong>y = mx + b</strong>
+            </p>
+            <ul class="bullets">
+              <li><strong>m</strong> = slope (rate of change)</li>
+              <li><strong>b</strong> = y-intercept (where x = 0)</li>
+              <li><strong>x</strong> = input, <strong>y</strong> = output</li>
+            </ul>
+
+            <div class="callout">
+              When <strong>x increases</strong>, <strong>y changes</strong> by a constant amount.
+            </div>
+          </article>
+        </div>
+
+        <div class="panel panel-wide">
+          <h3>5) Convert words to equations</h3>
+          <p>
+            Many problems describe a linear relationship using words. Here’s a common pattern:
+          </p>
+          <ul class="bullets">
+            <li><strong>“For every 1 unit increase in x…”</strong> → slope tells the “change in y”.</li>
+            <li><strong>“When x = 0…”</strong> → gives the y-intercept b.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE EXAMPLES -->
+    <section id="examples" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Interactive Examples</h2>
+          <p class="sub">
+            Try solving these. You’ll get feedback immediately.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- EXAMPLE 1: Solve 2x + 3 = 11 -->
+          <div class="panel interactive">
+            <h3>Example A: Solve a linear equation</h3>
+            <p class="muted">Solve: <strong>2x + 3 = 11</strong></p>
+
+            <div class="form-row">
+              <label for="xSolveA">Your answer for x:</label>
+              <input id="xSolveA" type="number" step="any" placeholder="e.g., 4" />
+            </div>
+
+            <div class="actions-row">
+              <button class="btn btn-primary" id="checkA">Check</button>
+              <button class="btn btn-ghost" id="resetA" type="button">Reset</button>
+            </div>
+
+            <div class="feedback" id="feedbackA" role="status" aria-live="polite"></div>
+
+            <details class="explain">
+              <summary>Show steps</summary>
+              <ol>
+                <li>2x + 3 = 11</li>
+                <li>Subtract 3 from both sides: 2x = 8</li>
+                <li>Divide by 2: x = 4</li>
+                <li>Check: 2(4)+3 = 11 ✓</li>
+              </ol>
+            </details>
+          </div>
+
+          <!-- EXAMPLE 2: Evaluate y = mx + b -->
+          <div class="panel interactive">
+            <h3>Example B: Evaluate a linear function</h3>
+            <p class="muted">Given <strong>y = 3x − 2</strong>, find y when <strong>x =</strong></p>
+
+            <div class="form-row">
+              <label for="xFuncB">x value:</label>
+              <input id="xFuncB" type="number" step="any" placeholder="e.g., 2" />
+            </div>
+
+            <div class="form-row">
+              <label for="yOutB">y output:</label>
+              <input id="yOutB" type="text" readonly placeholder="Answer appears here" />
+            </div>
+
+            <div class="actions-row">
+              <button class="btn btn-primary" id="evalB">Compute y</button>
+              <button class="btn btn-ghost" id="resetB" type="button">Reset</button>
+            </div>
+
+            <div class="mini-proof" id="proofB" aria-live="polite"></div>
+
+            <details class="explain">
+              <summary>How it works</summary>
+              <p>
+                Substitute x into <strong>y = 3x − 2</strong>. Then simplify.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <!-- EXAMPLE 3: Find slope from two points -->
+        <div class="panel interactive" style="margin-top: 18px;">
+          <h3>Example C: Find slope from two points</h3>
+          <p class="muted">
+            Find slope m for the line through points <strong>(x₁, y₁)</strong> and <strong>(x₂, y₂)</strong>.
+          </p>
+
+          <div class="grid-2-small">
+            <div class="form-row">
+              <label>x₁</label>
+              <input id="x1C" type="number" step="any" placeholder="e.g., 1" />
+            </div>
+            <div class="form-row">
+              <label>y₁</label>
+              <input id="y1C" type="number" step="any" placeholder="e.g., 2" />
+            </div>
+            <div class="form-row">
+              <label>x₂</label>
+              <input id="x2C" type="number" step="any" placeholder="e.g., 4" />
+            </div>
+            <div class="form-row">
+              <label>y₂</label>
+              <input id="y2C" type="number" step="any" placeholder="e.g., 8" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="mOutC">Slope m:</label>
+            <input id="mOutC" type="text" readonly placeholder="Answer appears here" />
+          </div>
+
+          <div class="actions-row">
+            <button class="btn btn-primary" id="slopeC">Compute slope</button>
+            <button class="btn btn-ghost" id="resetC" type="button">Reset</button>
+          </div>
+
+          <div class="feedback" id="feedbackC" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <section id="practice" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Practice Problems (with Answers)</h2>
+          <p class="sub">
+            Try to answer first, then use “Show answers” if you get stuck.
+          </p>
+        </div>
+
+        <div class="panel">
+          <div class="practice-controls">
+            <button class="btn btn-primary" id="showAnswersBtn" type="button">
+              Show Answers
+            </button>
+            <button class="btn btn-ghost" id="clearPracticeBtn" type="button">
+              Clear Inputs
+            </button>
+          </div>
+
+          <div class="practice-grid">
+            <!-- Problem 1 -->
+            <div class="problem" data-prob="1">
+              <h3>Problem 1</h3>
+              <p>Solve: <strong>3x − 5 = 16</strong></p>
+              <label>Answer (x):</label>
+              <input type="number" step="any" class="probInput" data-answer="7" placeholder="Enter x" />
+              <div class="probFeedback" aria-live="polite"></div>
+              <details class="answerBox">
+                <summary>Answer</summary>
+                <p><strong>x = 7</strong></p>
+              </details>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="problem" data-prob="2">
+              <h3>Problem 2</h3>
+              <p>Solve: <strong>5x + 2 = 27</strong></p>
+              <label>Answer (x):</label>
+              <input type="number" step="any" class="probInput" data-answer="5" placeholder="Enter x" />
+              <div class="probFeedback" aria-live="polite"></div>
+              <details class="answerBox">
+                <summary>Answer</summary>
+                <p><strong>x = 5</strong></p>
+              </details>
+            </div>
+
+            <!-- Problem 3 -->
+            <div class="problem" data-prob="3">
+              <h3>Problem 3</h3>
+              <p>
+                For <strong>y = 2x + 1</strong>, find <strong>y</strong> when <strong>x = 4</strong>.
+              </p>
+              <label>Answer (y):</label>
+              <input type="number" step="any" class="probInput" data-answer="9" placeholder="Enter y" />
+              <div class="probFeedback" aria-live="polite"></div>
+              <details class="answerBox">
+                <summary>Answer</summary>
+                <p><strong>y = 9</strong></p>
+              </details>
+            </div>
+
+            <!-- Problem 4 -->
+            <div class="problem" data-prob="4">
+              <h3>Problem 4</h3>
+              <p>
+                Find the slope m of the line through <strong>(1,2)</strong> and <strong>(3,6)</strong>.
+              </p>
+              <label>Answer (m):</label>
+              <input type="number" step="any" class="probInput" data-answer="2" placeholder="Enter m" />
+              <div class="probFeedback" aria-live="polite"></div>
+              <details class="answerBox">
+                <summary>Answer</summary>
+                <p><strong>m = 2</strong></p>
+              </details>
+            </div>
+
+            <!-- Problem 5 -->
+            <div class="problem" data-prob="5">
+              <h3>Problem 5</h3>
+              <p>
+                Write an equation in the form <strong>y = mx + b</strong>:
+                slope <strong>m = 3</strong>, y-intercept <strong>b = −2</strong>.
+              </p>
+              <label>Equation:</label>
+              <input type="text" class="probInput probText" data-answer="y = 3x - 2" placeholder="Type: y = 3x - 2" />
+              <div class="probFeedback" aria-live="polite"></div>
+              <details class="answerBox">
+                <summary>Answer</summary>
+                <p><strong>y = 3x − 2</strong></p>
+              </details>
+            </div>
+          </div>
+
+          <div class="practice-submit">
+            <button class="btn btn-primary" id="checkPracticeBtn" type="button">
+              Check Your Answers
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">
+          Made for learning: focus on understanding the steps, not just getting the final answer.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
